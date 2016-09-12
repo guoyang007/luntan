@@ -1,0 +1,54 @@
+@import url('../common/variables.less');
+.com-agenda {
+    width: 100%;
+    margin-top: 20px;
+    .agenda-hd {
+        width: 100%;
+        background-color: @bgcolor;
+    }
+    .agenda-bd {
+        margin-top: 15px;
+        .table {
+            border-collapse: collapse;
+            tr {
+                td {
+                    padding: 7px 0;
+                    &:first-child {
+                        padding-right: 20px;
+                        text-align: right;
+                        vertical-align: top;
+                    }
+                    &:nth-child(2) {
+                        padding-left: 20px;
+                        border-left: 1px solid #1A3062;
+                        position: relative;
+                        &:before,
+                        &:after{
+                        	content: "";
+                        	position: absolute;
+                        	left:-4px;
+                        	top: 9px;
+                        	display: inline-block;
+
+                        }
+                        &:before{
+                        	width: 8px;
+                        	height: 8px;
+                        	background-color: @bgcolor;
+                        	border-radius: 100%;
+                        }
+                        &:after{
+                        	left: -2px;
+                        	top: 10px;
+                        	width: 0;
+                        	height: 0;
+                        	border-style: solid;
+                        	border-width: 3px 4px;
+                        	border-color: transparent transparent transparent #ffffff; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

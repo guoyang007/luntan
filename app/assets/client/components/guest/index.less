@@ -1,0 +1,40 @@
+@import url('../common/variables.less');
+.com-guest {
+    width: 100%;
+    margin-top: 20px;
+    .guest-hd {
+        width: 100%;
+        background-color: @bgcolor;
+    }
+    .guest-bd {
+        .item {
+            list-style-type: none;
+            float: left;
+            width: 160px;
+            margin-top: 15px;
+            margin-right: 10px;
+            .wrapper {
+                width: 130px;
+                height: 120px;
+                overflow: hidden;
+                .avatar {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            .subject {
+                font-weight: bold;
+                font-size: 13px;
+                height: 40px;
+                line-height: 20px;
+            }
+            .addresser {
+                font-size: 12px;
+                height: 36px;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
