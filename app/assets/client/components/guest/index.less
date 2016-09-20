@@ -10,30 +10,38 @@
         .item {
             list-style-type: none;
             float: left;
-            width: 160px;
+            width: 220px;
             margin-top: 15px;
-            margin-right: 10px;
+            margin-right: 20px;
             .wrapper {
-                width: 130px;
+                width: 80px;
                 height: 120px;
                 overflow: hidden;
                 .avatar {
                     height: 100%;
                     width: auto;
                 }
+                .spe{
+                    transform:translateX(-20%);
+                }
             }
             .subject {
-                font-weight: bold;
+                margin-top:5px;
                 font-size: 13px;
                 height: 40px;
-                line-height: 20px;
+                line-height: 18px;
             }
             .addresser {
+                margin-top: 6px;
                 font-size: 12px;
                 height: 36px;
-            }
-            &:nth-child(3n) {
-                margin-right: 0;
+                line-height: 16px;
+                .name{
+                    font-size: 14px;
+                    color: #263F72;
+                    font-weight: bold;
+                }
+
             }
         }
     }
